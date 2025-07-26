@@ -2,11 +2,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from middleware.exception_handlers import catch_middleware_exceptions
 from routes.upload_files import router as upload_router
-from routes.ask_que import router as query_router
+from routes.chat import router as query_router
 
 
 app = FastAPI(title="Bussiness Assistant", description="API for Bussiness assistance chatbot")
-
+#
 ##COrs Setup
 app.add_middleware(
     CORSMiddleware,
