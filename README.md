@@ -10,6 +10,33 @@ An intelligent AI-powered business assistant chatbot that can understand documen
 🧑‍💻 Frontend: Streamlit
 
 # 📂 Folder Structure
+```.
+├── client
+│   ├── app.py
+│   ├── components
+│   │   ├── chatui.py
+│   │   ├── history_download.py
+│   │   └── upload.py
+│   ├── config.py
+│   ├── requirements.txt
+│   └── utils
+│       └── api.py
+└── server
+    ├── logger.py
+    ├── main.py
+    ├── middleware
+    │   └── exception_handlers.py
+    ├── modules
+    │   ├── llm.py
+    │   ├── load_doc.py
+    │   ├── query_handlers.py
+    │   └── vectordb_load.py
+    ├── requirements.txt
+    ├── routes
+    │   ├── chat.py
+    │   └── upload_files.py
+    └── upload_dir
+```
 
 
 # ⚙️ How to Use
