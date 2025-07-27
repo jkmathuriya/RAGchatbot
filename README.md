@@ -14,13 +14,41 @@ An intelligent AI-powered business assistant chatbot that can understand documen
 
 # ⚙️ How to Use
 ### 1. Clone the Repo
-'''bash
-
-'''
+```bash
+##Clone the repo
+git clone https://github.com/jkmathuriya/RAGchatbot.git
+##Change path
+cd RAGchatbot
+```
 ### 2. Install Requirements
+```bash
+cd server
+pip install -r requirements.txt
+```
 ### 3. Set Environment Variables
 Create a .env file:
+```
+GOOGLE_API_KEY="api_key"
+GROQ_API_KEY="api_key"
+PINECONE_API_KEY="api_key"
+PINECONE_INDEX_NAME='index-name'
+```
 ### 4. Run the Backend Server
-### 5. Edit URL in client/config.py & Run client end
+```bash
+cd server
+uvicorn main:app --reload
+```
+### 5. Edit URL in client/config.py & Run client
+```
+#Edit client/config.py with API_URL with backend URL
+cd client
+streamlit run app.py
+```
+
+# 🧑‍💼 Use Cases
+- Internal company knowledge base
+- HR policy Q&A bot
+- Document search assistant for sales/legal teams
+- Personal business assistant for founders/execs
 
 
